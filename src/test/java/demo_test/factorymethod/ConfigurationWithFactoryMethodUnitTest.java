@@ -1,17 +1,22 @@
-package demo;
+package demo_test.factorymethod;
 
+import demo.A;
+import demo.BPojo;
+import demo.BWithConstructor;
+import demo.EmptyConfigurationWithComponentScan;
+import demo.factorymethod.ConfigurationWithFactoryMethod;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-class EmptyConfigurationWithComponentScanUnitTest {
+class ConfigurationWithFactoryMethodUnitTest {
 	private static AnnotationConfigApplicationContext context;
 
 	@BeforeAll
 	static void init() {
-		context = new AnnotationConfigApplicationContext(EmptyConfigurationWithComponentScan.class);
+		context = new AnnotationConfigApplicationContext(ConfigurationWithFactoryMethod.class);
 	}
 
 	@AfterAll

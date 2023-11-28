@@ -1,4 +1,4 @@
-package demo.factorymethod;
+package demo_test;
 
 import demo.A;
 import demo.BPojo;
@@ -10,12 +10,12 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-class ConfigurationWithFactoryMethodUnitTest {
+class EmptyConfigurationWithComponentScanUnitTest {
 	private static AnnotationConfigApplicationContext context;
 
 	@BeforeAll
 	static void init() {
-		context = new AnnotationConfigApplicationContext(ConfigurationWithFactoryMethod.class);
+		context = new AnnotationConfigApplicationContext(EmptyConfigurationWithComponentScan.class);
 	}
 
 	@AfterAll

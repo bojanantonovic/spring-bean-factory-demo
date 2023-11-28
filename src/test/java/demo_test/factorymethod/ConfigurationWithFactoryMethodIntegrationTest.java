@@ -1,12 +1,17 @@
-package demo;
+package demo_test.factorymethod;
 
+import demo.A;
+import demo.BPojo;
+import demo.BWithConstructor;
+import demo.EmptyConfigurationWithComponentScan;
+import demo.factorymethod.ConfigurationWithFactoryMethod;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 
-@SpringJUnitConfig(EmptyConfigurationWithComponentScan.class)
-class EmptyConfigurationWithComponentScanIntegrationTest {
+@SpringJUnitConfig(ConfigurationWithFactoryMethod.class)
+class ConfigurationWithFactoryMethodIntegrationTest {
 
 	@Autowired
 	private A a;
